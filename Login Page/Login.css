@@ -1,3 +1,6 @@
+
+
+
 *{
   margin: 0;
   padding: 0;
@@ -18,7 +21,7 @@ body{
 .wrapper{
   position: relative;
   width: 800px;
-  height: 65vh;
+  height: 68vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 3px solid #772ea4;
@@ -32,6 +35,7 @@ body{
 }
 .title{
   font-size: 35px;
+
 }
 .inp{
   padding-bottom: 10px;

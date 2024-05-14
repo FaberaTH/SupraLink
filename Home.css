@@ -58,6 +58,51 @@ header {
     width: 100%;
     height: 100vh;
     background-image: url('../SupraLink/img/OPA\ LELE.svg');
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+}
+.cards {
+    width: 100%;
+    height: 100vh;
+    background-color: #191919;
+    display: flex;
+    justify-content:space-around;
+    padding: 50px;
+    gap: 50px;
 }
 
+.carduni{
+    width: 450px;
+    height: 530px;
+    background-color: #291237;
+    border-radius: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contorno{
+    width: 93%;
+    height: 93%;
+    background-color: #291237;
+    border: #58289A solid 5px;
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+.h1{
+    color: white;
+    font-size: 25px;  
+}
+.p{
+    color: white; 
+    top: 50%;
+    left: 50%;
+    margin: 50px 0 0 0px;  
+}
+.p1 {
+    color: white; 
+    top: 50%;
+    left: 50%;
+    margin: 100px 0 0 0px;
+}
