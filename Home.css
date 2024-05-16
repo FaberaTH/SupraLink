@@ -73,7 +73,7 @@ header {
 .carduni{
     width: 450px;
     height: 530px;
-    background-color: #291237;
+    background-color:    #291237;
     border-radius: 50px; 
     display: flex;
     justify-content: center;
@@ -118,25 +118,17 @@ header {
     width: 100%;
     height: 200vh;
     background-color: #191919;
-    align-items: center;
-}
-.card-nos{
-    width: 95%;
-    height: 530px;
-    background-color: #291237;
-    border-radius: 50px; 
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-.contorno-sobre-nos{
-    width: 98%;
-    height: 95%;
-    background-color: #291237;
-    border: #58289A solid 5px;
-    border-radius: 30px;
+
+.img-sobre-nos{
+    height: 702px;
+    width: 600px;
     display: flex;
-    text-align: center;
-    flex-direction: column;
+    justify-content: center;
+    --fill-layer-image-opacity: 0.07
+    
     
 }
+
