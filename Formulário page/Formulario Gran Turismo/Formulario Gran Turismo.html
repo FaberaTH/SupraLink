@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SupraLink Formulário</title>
+    <title>Formulario Gran-Turismo</title>
     <link rel="stylesheet" href="Formulario Gran Turismo.css">
 </head>
 <body>
@@ -14,23 +14,41 @@
                 <legend><b>Gran-Turismo GT</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Qual equipe você mais gosta?</label>
-                </div>
-                <div class="inputBox">
-                    <select id="nome" class="unputUser">
-                        <option value=""></option>
+                    <select id="nome" class="inputUser">
+                        <option selected disabled value="equipes">Qual Equipe mais Gosta?</option>
+                        <option value="">Aston Martin</option>
+                        <option value="">Audi Sport</option>
+                        <option value="">BMW Motorsport</option>
+                        <option value="">Ferrari</option>
+                        <option value="">Ford</option>
+                        <option value="">Lamborghini</option>
+                        <option value="">McLaren</option>
+                        <option value="">Mercedes</option>
+                        <option value="">Porsche</option>
                     </select>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Qual seu piloto preferido?</label>
+                    <select id="nome" class="inputUser">
+                        <option selected disabled value="equipes">Qual Seu Piloto Preferido?</option>
+                        <option value="">Lucas Auer</option>
+                        <option value="">Maro Engel</option>
+                        <option value="">Max Hesse</option>
+                        <option value="">Daniel Harper</option>
+                        <option value="">Augusto Farfus</option>
+                        <option value="">Jules Gounon</option>
+                    </select>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Qual seu Circuito preferido?</label>
+                    <select id="nome" class="inputUser">
+                        <option selected disabled value="equipes">Qual seu Circúito Preferido?</option>
+                        <option value="">Paul Ricard</option>
+                        <option value="">Zandvoort</option>
+                        <option value="">Barcelona</option>
+                        <option value="">Valencia</option>
+                        <option value="">Hockenheim</option>
+                    </select>
                 </div>
                 <br><br>
                 <input type="submit" name="submit" id="submit">
