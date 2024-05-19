@@ -1,65 +1,83 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #191919;
-  }
-  .box{
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: linear-gradient(to right,#191919, #2b2b2b );  
-    padding: 15px;
-    border-radius: 15px;
-    width: 30%;
-    box-shadow: 0 0 50px 0 #461f5e;
-  }
-  fieldset{
-    border: 3px solid #772ea4;
-  }
-  legend{
-    border: 1px solid #461f5e;
-    padding: 10px;
-    text-align: center;
-    background-color: #461f5e;
-    border-radius: 8px;
-  }
-  .inputBox{
-    position: relative;
-  }
-  .inputUser{
-    background: none;
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    color: white;
-    font-size: 15px;
-    width: 100%;
-    letter-spacing: 1px;
-  }
-  .labelInput{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    pointer-events: none;
-    transition: .5s;
-  }
-  .inputUser:focus ~ .labelInput,
-  .inputUser:valid ~ .labelInput{
-    top: -20px;
-    font-size: 15px;
-    color: rgb(201, 103, 251);
-  }
-  #submit{
-    background: linear-gradient(45deg, #772ea4, #c800ff);
-    width: 100%;
-    border: none;
-    padding: 15px;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 10px;
-  }
-  #submit:hover{
-    background: linear-gradient(45deg, #982cdb, #6d008c);
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #191919;
+}
+
+.box{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: linear-gradient(to right,#191919, #2b2b2b );  
+  padding: 15px;
+  border-radius: 15px;
+  width: 30%;
+  box-shadow: 0 0 50px 0 #461f5e;
+}
+
+fieldset{
+  border: 3px solid #772ea4;
+}
+
+legend{
+  border: 1px solid #461f5e;
+  padding: 10px;
+  text-align: center;
+  background-color: #632987;
+  border-radius: 8px;
+}
+
+.inputBox{
+  position: relative;
+}
+
+.inputUser{
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  outline: none;
+  color: rgb(255, 255, 255); /* Cor inicial do texto */
+  background: linear-gradient(to right,#191919, #2b2b2b );  
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+/* Mantém a cor das opções dentro do select */
+.inputUser option {
+  color: black;
+}
+
+/* Altera a cor do texto do select após a seleção */
+.inputUser:focus, .inputUser:valid {
+  color: rgb(255, 255, 255);
+}
+
+/* Estiliza a primeira option para ficar invisível após a seleção */
+.inputUser option[hidden] {
+  display: none;
+}
+
+.labelInput{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+#submit{
+  background: linear-gradient(45deg, #772ea4, #c800ff);
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#submit:hover{
+  background: linear-gradient(45deg, #982cdb, #6d008c);
+}
