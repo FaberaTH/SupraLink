@@ -6,29 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SupraLink Login</title>
   <link rel="stylesheet" href="Cadastro.css">
+  <style>
+    .alert {
+      color: red;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 
 <body>
   <div class="wrapper">
-    <form action="" class="form">
+    <form id="cadastroForm" class="form">
       <h1 class="title">CADASTRO</h1>
       <div class="inp">
-        <input type="text" class="input" placeholder="Nome">
+        <input type="text" class="input" id="nome" placeholder="Nome">
         <i class="fa-solid fa-user"></i>
       </div>
       <div class="inp">
-        <input type="text" class="input" placeholder="E-Mail">
+        <input type="text" class="input" id="email" placeholder="E-Mail">
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+      <div class="inp">
+        <input type="password" class="input" id="senha" placeholder="Senha">
         <i class="fa-solid fa-lock"></i>
       </div>
       <div class="inp">
-        <input type="password" class="input" placeholder="Senha">
-        <i class="fa-solid fa-nome"></i>
+        <input type="password" class="input" id="repitaSenha" placeholder="Repita Senha">
+        <i class="fa-solid fa-lock"></i>
       </div>
-      <div class="inp">
-        <input type="password" class="input" placeholder="Repita Senha">
-        <i class="fa-solid fa-repita-senha"></i>
-      </div>
-      <button class="submit">Cadastre-se</button>
+      <div id="alertMessage" class="alert"></div>
+      <button type="submit" class="submit">Cadastre-se</button>
       <p class="footer">Já tem Cadastro? <a href="../Login Page/Login.html" class="link">Faça Login</a></p>
     </form>
     <div></div>
@@ -38,6 +46,42 @@
       </div>
     </div>
   </div>
+
+  <script>
+    document.getElementById('cadastroForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const senha = document.getElementById('senha').value;
+      const repitaSenha = document.getElementById('repitaSenha').value;
+      const alertMessage = document.getElementById('alertMessage');
+
+      alertMessage.textContent = '';
+
+      if (!nome || !email || !senha || !repitaSenha) {
+        alertMessage.textContent = 'Existem campos vazios';
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alertMessage.textContent = 'Preencha com um E-Mail válido';
+        return;
+      }
+
+      if (senha.length < 8) {
+        alertMessage.textContent = 'A senha precisa ter no mínimo 8 caracteres';
+        return;
+      }
+
+      if (senha !== repitaSenha) {
+        alertMessage.textContent = 'Verifique se as senhas são as mesmas';
+        return;
+      }
+      alert('Formulário enviado com sucesso!');
+    });
+  </script>
 </body>
 
 </html>

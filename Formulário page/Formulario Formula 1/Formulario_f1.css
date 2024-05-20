@@ -18,6 +18,7 @@ body{
 
 fieldset{
   border: 3px solid #772ea4;
+  border-radius: 10px;
 }
 
 legend{
@@ -37,24 +38,18 @@ legend{
   border: none;
   border-bottom: 1px solid rgb(255, 255, 255);
   outline: none;
-  color: rgb(255, 255, 255); /* Cor inicial do texto */
+  color: rgb(255, 255, 255);
   background: linear-gradient(to right,#191919, #2b2b2b );  
   font-size: 15px;
   width: 100%;
   letter-spacing: 1px;
 }
-
-/* Mantém a cor das opções dentro do select */
 .inputUser option {
   color: black;
 }
-
-/* Altera a cor do texto do select após a seleção */
 .inputUser:focus, .inputUser:valid {
   color: rgb(255, 255, 255);
 }
-
-/* Estiliza a primeira option para ficar invisível após a seleção */
 .inputUser option[hidden] {
   display: none;
 }
