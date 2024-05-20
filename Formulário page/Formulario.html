@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="box">
-        <form action="">
+        <div action="">
             <fieldset>
                 <legend><b>Fórmulário</b></legend>
                 <br>
@@ -23,15 +23,15 @@
                 <br><br>
                 <input onclick="proximo()" type="submit" name="submit" id="submit" value="Enviar">
             </fieldset>
-        </form>
+        </div>
     </div>
     <script>
         function proximo() {
             var select = modalidade.value;
             if (select === 'formula') {
-                window.location = "Formulario_f1.html";
+                window.location = "../Formulário page/Formulario Formula 1/Formulario_f1.html"
             } else if (select === 'turismo') {
-                window.location = "Formulario Gran Turismo\Formulario_gran_turismo.html";
+                window.location = "../Formulário page/Formulario Gran Turismo/Formulario_gran_turismo.html";
             } else {
                 alert('Escolha uma Opção Válida');
             }

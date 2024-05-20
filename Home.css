@@ -20,6 +20,10 @@ header {
     display: flex;
     justify-content: space-between;
 }
+body {
+    overflow-x: hidden;
+}
+html
 
 .div_logo {
     width: 200px;
@@ -128,7 +132,6 @@ header {
     display: flex;
     justify-content: center;
     --fill-layer-image-opacity: 0.07
-    
-    
 }
+
 

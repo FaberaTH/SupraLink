@@ -6,15 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Formula 1</title>
     <link rel="stylesheet" href="Formulario_f1.css">
+    <style>
+        .alert {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="box">
-        <form action="">
+        <div>
             <fieldset>
                 <legend><b>Formula 1</b></legend>
                 <br>
                 <div class="inputBox">
-                    <select id="nome" class="inputUser" required>
+                    <select id="equipe" class="inputUser" required>
                         <option selected disabled hidden value="">Qual Equipe mais Gosta?</option>
                         <option value="Ferrari">Ferrari</option>
                         <option value="Aston Martin">Aston Martin</option>
@@ -26,7 +33,7 @@
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <select id="nome" class="inputUser" required>
+                    <select id="piloto" class="inputUser" required>
                         <option selected disabled hidden value="">Qual seu Piloto Preferido?</option>
                         <option value="Max Verstappen">Max Verstappen</option>
                         <option value="Lewis Hamilton">Lewis Hamilton</option>
@@ -40,8 +47,8 @@
                     </select>
                 </div>
                 <br><br>
-                <div class="inputBox">
-                    <select class="inputUser" required>
+                <div id="circuito" class="inputBox">
+                    <select id="circuitoSelect" class="inputUser" required>
                         <option selected disabled hidden value="">Qual seu Circuito Preferido?</option>
                         <option value="Monza">Monza</option>
                         <option value="Mônaco">Mônaco</option>
@@ -58,7 +65,7 @@
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <select id="nome" class="inputUser" required>
+                    <select id="idolo" class="inputUser" required>
                         <option selected disabled hidden value="">Qual seu Maior ídolo?</option>
                         <option value="Lewis Hamilton">Lewis Hamilton</option>
                         <option value="Ayrton Senna">Ayrton Senna</option>
@@ -67,13 +74,32 @@
                         <option value="Alain Prost">Alain Prost</option>
                     </select>
                 </div>
+                <div id="alertMessage" class="alert"></div>
                 <br>
                 <input type="submit" name="submit" id="submit">
             </fieldset>
-        </form>
+        </div>
     </div>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const equipe = document.getElementById('equipe').value;
+            const piloto = document.getElementById('piloto').value;
+            const circuito = document.getElementById('circuitoSelect').value;
+            const idolo = document.getElementById('idolo').value;
+            const alertMessage = document.getElementById('alertMessage');
+
+            alertMessage.textContent = '';
+
+            if (!equipe || !piloto || !circuito || !idolo) {
+                alertMessage.textContent = 'Existem campos vazios';
+                return;
+            }
+
+            alert('Formulário enviado com sucesso!');
+        });
+    </script>
 </body>
 </html>
-<script>
-    
-</script>
