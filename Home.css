@@ -23,7 +23,12 @@ header {
 body {
     overflow-x: hidden;
 }
-html
+html::-webkit-scrollbar-track{
+    background: black
+}
+html::-webkit-scrollbar-thumb{
+    background: black
+}
 
 .div_logo {
     width: 200px;
@@ -114,8 +119,8 @@ html
     top: 50%;
     left: 50%;
     margin: 100px 0 0 0px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .sobre-nos{
@@ -130,25 +135,67 @@ html
     display: flex;
     
 }
-
-.img-sobre-nos{
+.bloco-todo{
     height: 100%;
     width: 95%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 10px;
     color: rgb(0, 0, 0);
-    background-color: white;
+    color: white;
 }
-
-.img-sobre-nos p{
+.blocos{
+    width: 100%;
+    height: 90%;
     display: flex;
-    text-align: start;
-    font-size: 20px;
+    justify-content: space-evenly;
+    margin-top: 30px;
 }
-.img-sobre-nos h1{
+.bloco-todo h1{
     font-size: 70px;
 }
+.bloco{
+    width: 47%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.foto-minha{
+    display: flex;
+    justify-content: center;
+}
+.bloco .foto-minha{
+    width: 100%;
+    height: 90%;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+.eu{
+    border-radius: 25px;
+}
+.bloco .icones-link{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotos{
+    width: 80px;
+    height: 100%;
+}
+.link{
+    width: 50px;
+}
+.escrita p{
+    font-size: 20px
+}
+.icones-link .fotos{
+    filter: invert(1);
+}
+
 
 
