@@ -171,7 +171,7 @@ html{
 }
 .bloco .foto-minha{
     width: 100%;
-    height: 90%;
+    height: 90%; 
     background-size: 400px;
     background-repeat: no-repeat;
     border-radius: 30px;
@@ -194,10 +194,85 @@ html{
     width: 50px;
 }
 .escrita p{
-    font-size: 20px
+    font-size: 21px
 }
 .icones-link .fotos{
     filter: invert(1);
+}
+
+
+
+
+
+
+.sobre-projeto{
+    width: 100%;
+    height: 100vh;
+    background-color: #191919;
+    display: flex;
+    background-image: url(img/fundo\ onu\ live.svg);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    
+}
+.bloco-todo-projeto{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    color: white;
+}
+.blocos-projeto{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.bloco-todo-projeto h1{
+    font-size: 70px;
+}
+.bloco-projeto{
+    width: 47%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.foto-onu{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+}
+.bloco-projeto .foto-onu{
+    width: 100%;
+    height: 90%;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+.onu{
+    border-radius: 25px;
+    width: 100%;
+    height: 88%;
+    margin-top: 30px;
+}
+.bloco-projeto .icones-link{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.escrita-projeto p{
+    font-size: 20px;
+    text-align: center;
 }
 
 
