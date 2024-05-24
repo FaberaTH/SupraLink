@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    font-family: "Kanit", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sessao1 {
+    background-color: #191919;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #262626;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+body {
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar-track{
+    background: black
+}
+html::-webkit-scrollbar-thumb{
+    background: black
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.div_logo {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+}
+.links a {
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+}
+.links a:hover{
+    color: white;
+}
+.links a::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #772EA4;
+    transition: all .5s;
+}
+.links a:hover::before{
+    width: 100%;
+}
+.logcad a {
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+}
+.logcad a:hover{
+    color: white;
+}
+.logcad a::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #772EA4;
+    transition: all .5s;
+}
+.logcad a:hover::before{
+    width: 100%;
+}
+.logcad {
+    display: flex;
+    gap: 30px;
+    margin-right: 30px;
+}
+.imgporsche {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../SupraLink/img/OPA\ LELE.svg');
+    background-repeat: no-repeat;
+}
+.cards {
+    width: 100%;
+    height: 100vh;
+    background-color: #191919;
+    display: flex;
+    justify-content:space-around;
+    padding: 50px;
+    gap: 50px;
+}
+.carduni{
+    width: 450px;
+    height: 530px;
+    background-color:    #291237;
+    border-radius: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contorno{
+    width: 93%;
+    height: 93%;
+    background-color: #291237;
+    border: #58289A solid 5px;
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.h1{
+    color: white;
+    font-size: 25px;
+    margin-top: 40px;
+    text-align: justify center; 
+}
+.p{
+    color: white; 
+    top: 50%;
+    left: 50%;
+    margin: 20px 0 0 0px;  
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.p1 {
+    color: white; 
+    top: 50%;
+    left: 50%;
+    margin: 100px 0 0 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.sobre-nos{
+    width: 100%;
+    height: 100vh;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    background-image: url(img/monaco\ 100.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    
+}
+.bloco-todo{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    color: white;
+}
+.blocos{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.bloco-todo h1{
+    font-size: 70px;
+}
+.bloco{
+    width: 47%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.foto-minha{
+    display: flex;
+    justify-content: center;
+}
+.bloco .foto-minha{
+    width: 100%;
+    height: 90%; 
+    background-size: 400px;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+.eu{
+    border-radius: 25px;
+}
+.bloco .icones-link{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotos{
+    width: 80px;
+    height: 100%;
+}
+.link{
+    width: 50px;
+}
+.escrita p{
+    font-size: 21px
+}
+.icones-link .fotos{
+    filter: invert(1);
+}
+
+
+
+
+
+
+.sobre-projeto{
+    width: 100%;
+    height: 100vh;
+    background-color: #191919;
+    display: flex;
+    background-image: url(img/wallpaper\ onu\ finalizada\ final.svg);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    
+}
+.bloco-todo-projeto{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    color: white;
+}
+.blocos-projeto{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.bloco-todo-projeto h1{
+    font-size: 70px;
+}
+.bloco-projeto{
+    width: 47%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.foto-onu{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+}
+.bloco-projeto .foto-onu{
+    width: 100%;
+    height: 90%;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+.onu{
+    border-radius: 25px;
+    width: 100%;
+    height: 88%;
+    margin-top: 30px;
+}
+.bloco-projeto .icones-link{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.escrita-projeto p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 55px
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.footer {
+  position: relative;
+  width: 100%;
+  background: #121212;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("img/Wave\ Black.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 5s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 5s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 6s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+
+
+

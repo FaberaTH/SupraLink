@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Gran-Turismo</title>
+    <link rel="stylesheet" href="Formulario_gran_turismo.css">
+    <style>
+        .alert {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>
+            <fieldset>
+                <legend><b>Gran-Turismo GT</b></legend>
+                <br>
+                <div class="inputBox">
+                    <select id="equipe" class="inputUser" required>
+                        <option selected disabled hidden value="">Qual Equipe mais Gosta?</option>
+                        <option value="Aston Martin">Aston Martin</option>
+                        <option value="Audi Sport">Audi Sport</option>
+                        <option value="BMW Motorsport">BMW Motorsport</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Lamborghini">Lamborghini</option>
+                        <option value="McLaren">McLaren</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Porsche">Porsche</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <select id="piloto" class="inputUser" required>
+                        <option selected disabled hidden value="">Qual Seu Piloto Preferido?</option>
+                        <option value="Lucas Auer">Lucas Auer</option>
+                        <option value="Maro Engel">Maro Engel</option>
+                        <option value="Max Hesse">Max Hesse</option>
+                        <option value="Daniel Harper">Daniel Harper</option>
+                        <option value="Augusto Farfus">Augusto Farfus</option>
+                        <option value="Jules Gounon">Jules Gounon</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <select id="circuito" class="inputUser" required>
+                        <option selected disabled hidden value="">Qual seu Circúito Preferido?</option>
+                        <option value="Paul Ricard">Paul Ricard</option>
+                        <option value="Zandvoort">Zandvoort</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Valencia">Valencia</option>
+                        <option value="Hockenheim">Hockenheim</option>
+                    </select>
+                </div>
+                <div id="alertMessage" class="alert"></div>
+                <br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const equipe = document.getElementById('equipe').value;
+            const piloto = document.getElementById('piloto').value;
+            const circuito = document.getElementById('circuito').value;
+            const alertMessage = document.getElementById('alertMessage');
+
+            alertMessage.textContent = '';
+
+            if (!equipe || !piloto || !circuito) {
+                alertMessage.textContent = 'Existem campos vazios';
+                return;
+            }
+
+            alert('Formulário enviado com sucesso!');
+        });
+    </script>
+</body>
+</html>

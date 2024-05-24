@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupraLink Formulário</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+<body>
+    <div class="box">
+        <div action="">
+            <fieldset>
+                <legend><b>Fórmulário</b></legend>
+                <br>
+                <div class="inputBox">
+                    <select id="modalidade" class="inputUser" required>
+                        <option selected disabled hidden value="">Escolha sua Modalidade</option>
+                        <option value="formula">Formula 1</option>
+                        <option value="turismo">Gran Turismo</option>
+                    </select>
+                </div>
+                <br><br>
+                <input onclick="proximo()" type="submit" name="submit" id="submit" value="Enviar">
+            </fieldset>
+        </div>
+    </div>
+    <script>
+        function proximo() {
+            var select = modalidade.value;
+            if (select === 'formula') {
+                window.location = "../Formulário page/Formulario Formula 1/Formulario_f1.html"
+            } else if (select === 'turismo') {
+                window.location = "../Formulário page/Formulario Gran Turismo/Formulario_gran_turismo.html";
+            } else {
+                alert('Escolha uma Opção Válida');
+            }
+        }
+    </script>
+</body>
+</html>
